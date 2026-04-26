@@ -9,3 +9,5 @@ id INT AUTO_INCREMENT PRIMARY KEY,
  date_of_birth DATE
 );
 SELECT * FROM users;
+
+ALTER TABLE users ADD COLUMN salary INT AFTER date_of_birth; 
