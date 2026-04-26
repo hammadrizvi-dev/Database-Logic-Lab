@@ -14,15 +14,3 @@ Welcome to my database learning repository. This space is exclusively dedicated 
 * **Database:** MySQL / SQL Server (Primary)
 * **Tool:** Visual Studio Code
 * **Extension:** SQLTools & MySQL Client
-
-## 📁 Repository Structure
-```text
-├── Basics/
-│   └── tables_creation.sql
-├── Intermediate/
-│   └── joins_and_grouping.sql
-├── Advanced/
-│   └── triggers_and_procedures.sql
-├── Projects/
-│   └── library_management_system.sql
-└── README.md
