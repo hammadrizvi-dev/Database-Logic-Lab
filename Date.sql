@@ -1,0 +1,45 @@
+--Date Functions
+
+--1. CURRENT_DATE
+SELECT CURRENT_DATE AS today_date;  
+
+--2. CURRENT_TIME
+SELECT CURRENT_TIME AS current_time;
+
+--3. CURRENT_TIMESTAMP
+SELECT CURRENT_TIMESTAMP AS current_timestamp;
+
+--4. DATE_ADD
+SELECT DATE_ADD(CURRENT_DATE, INTERVAL 7 DAY) AS next_week_date;
+
+--5. DATE_SUB
+SELECT DATE_SUB(CURRENT_DATE, INTERVAL 7 DAY) AS last_week_date;
+
+--6. DATEDIFF
+SELECT DATEDIFF('2024-12-31', CURRENT_DATE) AS days_until_year
+
+--7. YEAR, MONTH, DAY
+SELECT CURRENT_DATE AS today_date, YEAR(CURRENT_DATE) AS current_year, MONTH(CURRENT
+_DATE) AS current_month, DAY(CURRENT_DATE) AS current_day;
+
+--8. DATE_FORMAT
+SELECT CURRENT_DATE AS today_date, DATE_FORMAT(CURRENT_DATE, '%M %d, %
+Y') AS formatted_date;
+
+--9. STR_TO_DATE
+SELECT STR_TO_DATE('2024-12-31', '%Y-%m-%d') AS parsed_date;
+--10. EXTRACT
+SELECT CURRENT_DATE AS today_date, EXTRACT(YEAR FROM CURRENT_DATE) AS current_year,
+EXTRACT(MONTH FROM CURRENT_DATE) AS current_month, EXTRACT(DAY FROM CURRENT_DATE) AS current_day;
+
+--11. Now()
+SELECT NOW() AS current_datetime;   
+
+--12. TIMESTAMPDIFF
+SELECT TIMESTAMPDIFF(DAY, CURRENT_DATE, '2024-12-31')
+AS days_until_year_end;
+
+-- 13. year(), month(), day()
+SELECT CURRENT_DATE AS today_date, YEAR(CURRENT_DATE) AS current_year, MONTH(CURRENT
+_DATE) AS current_month, DAY(CURRENT_DATE) AS current_day;
+
